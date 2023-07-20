@@ -6,7 +6,7 @@
 .cover {
     height: 100vh;
     background-position: center;
-    background-image: url("/statics/images/cover.jpg");
+    background-image: url("images/cover.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
