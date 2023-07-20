@@ -1,7 +1,70 @@
+/* #preloader{
+    background: #202020;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+} */
+
+
+/*--------------------------------------------------------------
+# Preloader
+--------------------------------------------------------------*/
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+    overflow: hidden;
+    background: #151515;
+}
+
+#preloader:before {
+    content: "";
+    position: fixed;
+    top: calc(50% - 0px);
+    left: calc(50% - 30px);
+    border: 6px solid #ffc451;
+    border-top-color: #151515;
+    border-bottom-color: #151515;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    -webkit-animation: animate-preloader 1s linear infinite;
+    animation: animate-preloader 1s linear infinite;
+}
+
+@-webkit-keyframes animate-preloader {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes animate-preloader {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+
 .body {
     background-color: #202020;
     font-family: Poppins, sans-serif;
 }
+
+
 
 .cover {
     height: 100vh;
@@ -45,40 +108,47 @@
     filter: invert(100%);
     object-fit: scale-down;
 }
-#li-c{
-    display: none;
-   }
-.li-a:hover #li{
+
+#li-c {
     display: none;
 }
-.li-a:hover #li-c{
+
+.li-a:hover #li {
+    display: none;
+}
+
+.li-a:hover #li-c {
     display: block;
     filter: drop-shadow(1px 1px 3px #00A0DC);
     transform: scale(1.1);
 }
 
-#git-c{
-    display: none;
-   }
-.git-a:hover #git{
+#git-c {
     display: none;
 }
-.git-a:hover #git-c{
+
+.git-a:hover #git {
+    display: none;
+}
+
+.git-a:hover #git-c {
     display: block;
     filter: drop-shadow(1px 1px 3px #ffffff);
     transform: scale(1.1);
 }
 
-#wt-c{
-    display: none;
-   }
-.wt-a:hover #wt{
+#wt-c {
     display: none;
 }
-.wt-a:hover #wt-c{
+
+.wt-a:hover #wt {
+    display: none;
+}
+
+.wt-a:hover #wt-c {
     display: block;
     filter: drop-shadow(1px 1px 3px #25D366);
-   
+
 }
 
 
@@ -101,6 +171,7 @@
     .main-name-tag {
         font-size: 20px;
     }
+
     .intro {
         font-size: medium;
     }
