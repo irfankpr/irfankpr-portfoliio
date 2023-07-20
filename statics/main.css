@@ -1,0 +1,104 @@
+.body {
+    background-color: #202020;
+    font-family: Poppins, sans-serif;
+}
+
+.cover {
+    height: 100vh;
+    background-position: center;
+    background-image: url("/statics/images/cover.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header {
+    background: rgb(32, 32, 32, 0.7);
+    border-bottom: #feda4e solid 0.5px;
+    color: #ffffff;
+}
+
+.navs {
+    color: #feda4e;
+}
+
+.connectme {
+    color: #feda4e;
+}
+
+.main-name {
+    color: #ffffff;
+    font-family: Poppins, sans-serif;
+    font-size: 100px;
+}
+
+.main-name span {
+    color: #feda4e;
+}
+
+.main-name-tag {
+    font-size: 35px;
+    font-family: Poppins, sans-serif;
+    color: #feda4e;
+}
+
+.icon {
+    filter: invert(100%);
+    object-fit: scale-down;
+}
+#li-c{
+    display: none;
+   }
+.li-a:hover #li{
+    display: none;
+}
+.li-a:hover #li-c{
+    display: block;
+    filter: drop-shadow(1px 1px 3px #00A0DC);
+    transform: scale(1.1);
+}
+
+#git-c{
+    display: none;
+   }
+.git-a:hover #git{
+    display: none;
+}
+.git-a:hover #git-c{
+    display: block;
+    filter: drop-shadow(1px 1px 3px #ffffff);
+    transform: scale(1.1);
+}
+
+#wt-c{
+    display: none;
+   }
+.wt-a:hover #wt{
+    display: none;
+}
+.wt-a:hover #wt-c{
+    display: block;
+    filter: drop-shadow(1px 1px 3px #25D366);
+   
+}
+
+
+.intro {
+    border-radius: 20px;
+    box-shadow: 1px 1px 30px #000000;
+    background-color: hsl(0, 0%, 13%, 0.7);
+    color: #ffffff;
+    line-height: 2;
+    font-weight: bold;
+    font-size: larger;
+
+}
+
+@media screen and (max-width: 800px) {
+    .main-name {
+        font-size: 60px;
+    }
+
+    .main-name-tag {
+        font-size: 20px;
+    }
+}
